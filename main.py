@@ -135,7 +135,6 @@ class MYwindow(QWidget):
                     n=1,
                 )
                 image_url = response.data[0].url
-                self.image_urls.append(image_url)
                 self.download_and_show_image(image_url)
             except Exception as e:
                 print(f"An error occurred: {e}")
